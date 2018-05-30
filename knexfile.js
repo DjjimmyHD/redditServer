@@ -1,11 +1,10 @@
 
+require('dotenv').config()
 
 module.exports = {
   development: {
     client: 'pg',
-    connection: {
-      filename: 'postgres://localhost/redditServer'
-    }
+    connection: 'postgres://localhost/redditServer'
   },
   production: {
     client: 'pg',
